@@ -3,12 +3,18 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 
 import { Home } from "./views/home";
-import { Demo } from "./views/demo";
-import { Single } from "./views/single";
+import  Planets  from "./views/planets";
+import PlanetDetails from "./views/planetsDetails";
+import  People  from "./views/people";   
+import PeopleDetails from "./views/peopleDetails";
+ 
+import  Vehicles  from "./views/vehicles";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
+import  CustomNavbar  from "./component/navbar";
 import { Footer } from "./component/footer";
+import VehicleDetails from "./views/vehiclesDetails";
+
 
 //create your first component
 const Layout = () => {
@@ -20,11 +26,21 @@ const Layout = () => {
 		<div>
 			<BrowserRouter basename={basename}>
 				<ScrollToTop>
-					<Navbar />
+					<CustomNavbar />
 					<Routes>
 						<Route path="/" element={<Home />} />
-						<Route path="/demo" element={<Demo />} />
-						<Route path="/single/:theid" element={<Single />} />
+
+						<Route path="/planets" element={<Planets />} />
+						<Route path="/planets/:planetId" element={<PlanetDetails />} />
+
+						<Route path="/people" element={<People />} />
+						<Route path= "people/:peopleId" element={<PeopleDetails/>} />
+
+						
+						<Route path="/vehicles" element={<Vehicles />} />
+						<Route path= "vehicles/:vehicleId" element={<VehicleDetails/>} />
+						
+
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
 					<Footer />

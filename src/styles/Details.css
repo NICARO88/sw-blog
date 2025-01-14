@@ -1,0 +1,45 @@
+/* Contenedor principal con padding para evitar que quede bajo el navbar */
+.details-container {
+    background-color: black;
+    color: white;
+    min-height: 100vh; /* Ocupa toda la pantalla */
+    padding-top: 70px; /* Ajusta según la altura del navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta estática sin efectos */
+.details-card {
+    background-color: #1a1a1a;
+    border: none;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1); /* Sombra ligera */
+    width: 80%;
+    max-width: 1000px;
+}
+
+/* Estilo del header */
+.details-header {
+    background-color: #333;
+    color: #FFD700; /* Título dorado */
+    padding: 20px;
+}
+
+/* Imagen responsiva */
+.details-img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Descripción */
+.details-description {
+    margin-bottom: 20px;
+}
+
+/* Filas para evitar problemas de solapamiento */
+.details-row {
+    margin: 0;
+}
+
+
