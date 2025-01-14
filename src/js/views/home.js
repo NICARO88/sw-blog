@@ -10,19 +10,19 @@ export const Home = () => {
         {
             title: "Planets",
             description: "Explore the vast planets of the galaxy.",
-            img: store.images.planets, // Corregido para obtener la imagen desde el store
+            img: store.images.planets, 
             link: "/planets"
         },
         {
             title: "People",
             description: "Meet the characters of Star Wars.",
-            img: store.images.people, // Corregido para obtener la imagen desde el store
+            img: store.images.people, 
             link: "/people"
         },
         {
             title: "Vehicles",
             description: "Discover the vehicles of Star Wars.",
-            img: store.images.vehicles, // Corregido para obtener la imagen desde el store
+            img: store.images.vehicles, 
             link: "/vehicles"
         }
     ];

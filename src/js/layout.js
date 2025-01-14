@@ -12,7 +12,7 @@ import  Vehicles  from "./views/vehicles";
 import injectContext from "./store/appContext";
 
 import  CustomNavbar  from "./component/navbar";
-import { Footer } from "./component/footer";
+
 import VehicleDetails from "./views/vehiclesDetails";
 
 
@@ -43,7 +43,7 @@ const Layout = () => {
 
 						<Route path="*" element={<h1>Not found!</h1>} />
 					</Routes>
-					<Footer />
+					
 				</ScrollToTop>
 			</BrowserRouter>
 		</div>

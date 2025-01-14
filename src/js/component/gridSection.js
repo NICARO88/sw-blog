@@ -15,7 +15,7 @@ const GridSection = ({ data, title, section }) => {
 
     return (
         <div className="grid-container">
-            <h1 className="home-title">{title}</h1>
+            <h1 className="title">{title}</h1>
             <Row xs={1} md={2} lg={5} className="g-4">
                 {data.map((item) => (
                     <Col key={`${section}-${item.uid}`}>

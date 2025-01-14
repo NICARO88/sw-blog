@@ -1,60 +1,80 @@
-/* Fondo negro de pantalla completa */
+
 .home-container {
-    background-color: black; /* Fondo negro */
-    color: white; /* Texto blanco */
-    min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background-color: black; 
+    color: white; 
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px; /* Espaciado interno */
+    padding: 20px; 
     box-sizing: border-box;
+    
 }
 
-/* Contenedor del contenido principal */
+
 .grid-container {
-    background-color: #1a1a1a; /* Fondo gris oscuro */
-    padding: 40px; /* Espaciado interno */
-    border-radius: 15px; /* Bordes redondeados */
-    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2); /* Sombra ligera */
-    max-width: 1200px; /* Ancho máximo del contenido */
-    width: 100%; /* Ocupa el 100% del ancho disponible */
-    margin: 0 auto; /* Centrado */
+    background-color: #1a1a1a; 
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2); 
+    max-width: 1200px; 
+    width: 100%; 
+    margin: 0 auto; 
+    padding-top: calc(70px + 40px); 
 }
 
-/* Estilo del título */
+@media (max-width: 768px) {
+    .grid-container {
+        padding-top: calc(90px + 20px); 
+    }
+}
+
+
+
 .home-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem; /* Tamaño del título */
+    font-size: 3rem; 
     font-weight: bold;
-    color: #FFD700; /* Dorado */
-    text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFA500; /* Brillo */
-    margin-bottom: 40px; /* Separación inferior */
+    color: #FFD700; 
+    text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFA500; 
+    margin-bottom: 40px; 
+    padding-top: calc(70px + 40px); 
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #FFD700; 
+    text-shadow: 0px 0px 10px #FFD700, 0px 0px 20px #FFA500; 
+    margin-bottom: 40px; 
 }
 
 
-/* Tarjetas personalizadas */
 .card {
-    border: 1px solid #FFD700; /* Borde dorado */
-    border-radius: 10px; /* Bordes redondeados */
-    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1); /* Sombra ligera */
-    background-color: #222; /* Fondo oscuro */
-    color: white; /* Texto blanco */
+    border: 1px solid #FFD700; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.1); 
+    background-color: #222; 
+    color: white; 
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: scale(1.05); /* Efecto de zoom */
-    box-shadow: 0px 8px 30px rgba(255, 255, 255, 0.2); /* Sombra más intensa */
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 30px rgba(255, 255, 255, 0.2); 
 }
 
-/* Texto dentro de las tarjetas */
+
 .card-title {
-    color: #FFD700; /* Títulos dorados */
+    color: #FFD700; 
 }
 
 .card-text {
-    color: #ccc; /* Texto gris claro */
+    color: #ccc; 
 }
